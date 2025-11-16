@@ -1,0 +1,84 @@
+.offers-section {
+  text-align: center;
+  margin: 60px 0;
+  padding: 0 20px;
+}
+
+.offers-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Offer Card Styling */
+.offer-card {
+  width: 220px;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Offer Text */
+.offer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.offer-details {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Coupon Code Box */
+.offer-code {
+  background: #fff;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #000;
+  font-size: 15px;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .offer-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .offer-title {
+    font-size: 16px;
+  }
+
+  .offer-details {
+    font-size: 13px;
+  }
+
+  .offer-code {
+    font-size: 14px;
+  }
+}
