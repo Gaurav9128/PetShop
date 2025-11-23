@@ -1,5 +1,6 @@
 import CategorySlider from "../../Components/CategorySlidebar/CategorySlider";
 import Sidebar from "../../Components/Sidebar";
+import ProductList from "../ProductListing";
 
 const Listing = () =>{
     return(
@@ -11,6 +12,7 @@ const Listing = () =>{
 
                         <div className="content_right">
                             <CategorySlider />
+                            <ProductList />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,120 @@
+.product-list-wrapper {
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+}
+
+.product-tag {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 16px;
+  margin-top: 8px;
+  min-height: 50px;
+}
+
+.weight-box {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.weight-btn {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.price-box {
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mrp {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #777;
+}
+
+.discount {
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.offers {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+.add-cart-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 8px;
+  background: white;
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-cart-btn:hover {
+  background: orange;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

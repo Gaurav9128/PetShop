@@ -2,43 +2,43 @@ import HomeBanner from "../../Components/HomeBanner";
 import Button from "@mui/material/Button";
 import { BsArrowRightShort } from "react-icons/bs";
 import React from "react";
-import Slider from "react-slick";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-
 import ProductItem from "../../Components/ProductItem";
-import CategoryGrid from "../../Components/CategoryGrid";
+// import CategoryGrid from "../../Components/CategoryGrid";
 import WellnessSection from "../../Components/WellnessSection/WellnessSection";
 import OffersSection from "../../Components/OffersSection/OffersSection";
-import Footer from "../../Components/Footer/Footer.js";
+// import Footer from "../../Components/Footer/Footer.js";
 import BrandsInFocus from "../../Components/Brands Banner/Brands Banner.js";
+import Essentials from  "../../Components/Essentials/index.js";
 
 const Home = () => {
-    var productSliderOptions = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows:true,
-    autoplay:true
-  };
+  //   var productSliderOptions = {
+  //   dots: true,
+  //   infinite: false,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   arrows:true,
+  //   autoplay:true
+  // };
     return (
         <>
            <HomeBanner />
-            <CategoryGrid />
+           <Essentials />
+            {/* <CategoryGrid /> */}
            <section className="homeProducts">
             <div className="container">
                 <div className="row">
                     <div className="col-md-3">
                        <div className="banner">
-                         <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor" w-100/>
+                         <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" alt="1" className="cursor" w-100/>
                        </div>
 
                        <div className="banner mt-4">
-                         <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="cursor" w-100/>
+                         <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" alt="2" className="cursor" w-100/>
                        </div>
                     </div>
                     <div className="col-md-9 productRow">
@@ -156,7 +156,7 @@ const Home = () => {
             <BrandsInFocus />
 
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

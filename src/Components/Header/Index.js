@@ -6,7 +6,9 @@ import { IoBagOutline } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import SearchBox from './SearchBox';
 import Navigation from './Navigation';
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+    const navigate = useNavigate();
     return (
         <>
             <header className="headerwrapper">
@@ -28,7 +30,8 @@ const Header = () => {
                          <SearchBox />
 
                             <div className='part3 d-flex align-align-items-center ml-auto'>
-                                <button className='circle mr-3'><FiUser/></button>
+                                <button className="circle mr-3"onClick={() => navigate("/login")}><FiUser size={20}/>
+                                 </button>
                                 <div className='ml-auto cartTab d-flex align-items-center'>
                                     <span className='cartCount'>₹0</span>
                                      <div className='position-relative ml-2'>

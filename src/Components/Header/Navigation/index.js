@@ -38,21 +38,21 @@ const Navigation = () => {
             <div className="col-sm-10 navPart2 d-flex align-items-center">
               <ul className="list list-inline m-0">
                 <li className="list-inline-item position-relative">
-                  <Link to="/"><Button>Cats</Button></Link>
+                  <Link to="/cat/1"><Button>Cats</Button></Link>
                   <div className="submenu shadow">
-                    <Link to="/"><Button>Cat Food</Button></Link>
-                    <Link to="/"><Button>Cat Toys</Button></Link>
-                    <Link to="/"><Button>Cat Grooming</Button></Link>
+                    <Link to="/cat/1"><Button>Cat Food</Button></Link>
+                    <Link to="/cat/1"><Button>Cat Toys</Button></Link>
+                    <Link to="/cat/1"><Button>Cat Grooming</Button></Link>
                   </div>
                 </li>
 
-                <li className="list-inline-item"><Link to="/"><Button>Dogs</Button></Link></li>
-                <li className="list-inline-item"><Link to="/"><Button>Pet Parent</Button></Link></li>
-                <li className="list-inline-item"><Link to="/"><Button>Henlo</Button></Link></li>
-                <li className="list-inline-item"><Link to="/"><Button>Pharmacy</Button></Link></li>
-                <li className="list-inline-item"><Link to="/"><Button>Shop By Breed</Button></Link></li>
-                <li className="list-inline-item"><Link to="/"><Button>Consult a Vet</Button></Link></li>
-                <li className="list-inline-item"><Link to="/"><Button>Supertails Clinic</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Dogs</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Pet Parent</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Henlo</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Pharmacy</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Shop By Breed</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Consult a Vet</Button></Link></li>
+                <li className="list-inline-item"><Link to="/cat/1"><Button>Supertails Clinic</Button></Link></li>
               </ul>
             </div>
           </div>

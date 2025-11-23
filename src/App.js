@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Index";
 import Header from "./Components/Header/Index";
 import Listing from "./Pages/Listing";
 import Footer from "./Components/Footer/Footer";
+import Login from "./Components/Login Components/Login";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
    <Routes>
     <Route path="/" exact={true} element={<Home/>} />
     <Route path="/cat/:id" exact={true} element={<Listing />} />
+     <Route path="/login" element={<Login />} />
    </Routes>
    <Footer />
    </BrowserRouter>

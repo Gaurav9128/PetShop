@@ -1,92 +1,80 @@
-.everyday-essentials {
-  text-align: center;
-  padding: 20px;
+.wellness-wrapper {
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
 }
 
-.everyday-essentials h2 {
+.wellness-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
   margin-bottom: 30px;
-  font-size: 2rem;
-  font-weight: bold;
 }
 
-.grid-container {
+/* GRID */
+.wellness-grid {
   display: grid;
-  /* Creates 8 columns, each taking up an equal fraction of the space. */
-  grid-template-columns: repeat(7, 1fr); 
-  gap: 20px; /* Space between grid items */
-  max-width: 1400px; /* Adjust as needed */
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 22px;
 }
 
-.category-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.image-container {
-  background-color: #f7f7f7; /* Light gray background */
-  border-radius: 12px; /* Rounded corners for the container */
-  padding: 15px; 
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Makes the container square */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* For positioning the trending badge */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-  transition: transform 0.2s;
-}
-
-.category-item:hover .image-container {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.category-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Ensures the image fits without cropping */
-}
-
-.category-name {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #333;
-  font-weight: 500;
+/* CARD BOX */
+.wellness-card {
   text-align: center;
+  cursor: pointer;
 }
 
-.trending-badge {
-  position: absolute;
-  bottom: -10px; 
-  left: 0;
-  background-color: #a4e600; /* Neon green background */
-  color: #000;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+/* IMAGE BOX WITH ROUNDED BACKGROUND */
+.img-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid #dfdfdf;
 }
 
-/* Basic responsiveness for smaller screens */
-@media (max-width: 1200px) {
-  .grid-container {
-    grid-template-columns: repeat(6, 1fr); /* 6 columns on medium screens */
+/* IMAGE */
+.wellness-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+/* DISCOUNT LABEL */
+.discount-label {
+  background: #f12c7d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 10px auto 5px auto;
+}
+
+/* TITLE */
+.wellness-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .wellness-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
-}
 
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on tablets */
+  .wellness-img {
+    height: 110px;
   }
-}
 
-@media (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+  .discount-label {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .wellness-name {
+    font-size: 13px;
   }
 }
