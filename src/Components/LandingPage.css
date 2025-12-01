@@ -1,0 +1,48 @@
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.landing-logo {
+  width: 250px;
+  height: auto;
+}
+
+.landing-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.landing-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.landing-btn:hover {
+  background-color: #444;
+}
+
+@media (max-width: 600px) {
+  .landing-title {
+    font-size: 28px;
+  }
+
+  .landing-logo {
+    width: 110px;
+  }
+}
