@@ -48,11 +48,11 @@ const Navigation = () => {
 
                 <li className="list-inline-item"><Link to="/cat/1"><Button>Dogs</Button></Link></li>
                 <li className="list-inline-item"><Link to="/cat/1"><Button>Pet Parent</Button></Link></li>
-                <li className="list-inline-item"><Link to="/cat/1"><Button>Henlo</Button></Link></li>
+                {/* <li className="list-inline-item"><Link to="/cat/1"><Button>Henlo</Button></Link></li> */}
                 <li className="list-inline-item"><Link to="/cat/1"><Button>Pharmacy</Button></Link></li>
                 <li className="list-inline-item"><Link to="/cat/1"><Button>Shop By Breed</Button></Link></li>
                 <li className="list-inline-item"><Link to="/cat/1"><Button>Consult a Vet</Button></Link></li>
-                <li className="list-inline-item"><Link to="/cat/1"><Button>Supertails Clinic</Button></Link></li>
+                {/* <li className="list-inline-item"><Link to="/cat/1"><Button>Supertails Clinic</Button></Link></li> */}
               </ul>
             </div>
           </div>

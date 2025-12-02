@@ -2,7 +2,7 @@ import React from "react";
 import "./WellnessSection.css";
 
 const wellnessData = [
-  { title: "Supertails+ clinic", discount: "Fear-Free", img: "https://ik.imagekit.io/supertails/cdn/shop/files/frame_1707516647.webp?tr=w-320,f-auto,q-auto" },
+  // { title: "Supertails+ clinic", discount: "Fear-Free", img: "https://ik.imagekit.io/supertails/cdn/shop/files/frame_1707516647.webp?tr=w-320,f-auto,q-auto" },
   { title: "Kidney care", discount: "Up to 10% OFF", img: "https://ik.imagekit.io/supertails/cdn/shop/files/frame_1707516652.webp?tr=w-320,f-auto,q-auto" },
   { title: "Dewormer", discount: "Up to 14% OFF", img: "https://ik.imagekit.io/supertails/cdn/shop/files/frame_1707516643.webp?tr=w-320,f-auto,q-auto" },
   { title: "Tick & fleas", discount: "Up to 30% OFF", img: "https://ik.imagekit.io/supertails/cdn/shop/files/frame_1707516645.webp?tr=w-320,f-auto,q-auto" },
